@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <a href="" class="logo"> <img [src]="logoImg"> </a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">MyList</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search Here..">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </header>
+        <div class="banner">
+            <img [src]="bannerImg" class="bg">
+            <div class="content">
+                <img [src]="nameImg" class="movieTitle">
+                <h4>
+                    <span>2022</span>
+                    <span><i>12+</i></span>
+                    <span>1hr 55min</span>
+                    <span>Action</span>
+                </h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium vitae illum repellendus sed rem itaque fugiat magni sint. 
+                    Reprehenderit quaerat expedita ab repellat error debitis repudiandae a ex corrupti? Reprehenderit quaerat expedita ab repellat error debitis repudiandae a ex corrupti?
+                </p>
+                <div class="buttons">
+                    <a href=""><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                    <a href=""><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+                </div>
+            </div>
+            <a class="play"><img [src]="playImg"> Watch Trailer</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <section class="sec">
+            <header>
+                <a href="#"><img [src]="logoImg"  class="logo"></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">NewLetter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>That's What<br><span>I Like</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur blanditiis cumque ad minima inventore fuga molestiae quaerat harum sint necessitatibus provident nam recusandae et nihil dolorum quas, officiis esse. Laudantium.</p>
+                    <a href="#"> View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img [src]="firstImg" class="pepsi">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img [src]="firstImg" onclick="imgSlider('firstImg')"></li>
+                <li><img [src]="secondImg" onclick="imgSlider('secondImg')"></li>
+                <li><img [src]="thirdImg" onclick="imgSlider('thirdImg')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href=""> <img [src]="fbImg"> </a></li>
+                <li><a href=""> <img [src]="twitterImg"> </a></li>
+                <li><a href=""> <img [src]="instagramImg"> </a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.pepsi').src = anything;
+            }
+        </script>
+    </body>
+</html>
